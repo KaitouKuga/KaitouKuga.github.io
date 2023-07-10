@@ -61,7 +61,7 @@ function hitungLuas() {
     var sisiLuas = document.getElementById("sisi-luas").value;
     var output = document.getElementById("output-luas");
     const resultSquare = sisiLuas*sisiLuas
-    const fixedLuasSquare = resultSquare.toFixed(2);
+    const fixedLuasSquare = resultSquare.toFixed(0);
 
     // Print text and result for the output
     document.getElementById("rumus-luas").innerHTML = sisiLuas + ' x ' + sisiLuas;
@@ -102,7 +102,7 @@ function hitungLuasRectangle() {
     var lebarLuas = document.getElementById("lebar-luas").value;
     var output = document.getElementById("output-luas-r");
     const resultRect = panjangLuas*lebarLuas
-    const fixedResultLuasRect = resultRect.toFixed(2);
+    const fixedResultLuasRect = resultRect.toFixed(0);
 
     document.getElementById("rumus-luas-r").innerHTML = panjangLuas + ' x ' + lebarLuas;
     document.getElementById("result-luas-r").innerHTML = fixedResultLuasRect
@@ -123,7 +123,7 @@ function hitungKelilingRectangle() {
     const lebarKeliling = document.getElementById("lebar-keliling").value;
     var output = document.getElementById("output-keliling-r");
     const totalKeliling = parseFloat(panjangKeliling, 10) + parseFloat(lebarKeliling, 10)
-    const fixedResultKelilingRect = totalKeliling.toFixed(2);
+    const fixedResultKelilingRect = totalKeliling.toFixed(0);
 
     document.getElementById("rumus-keliling-r").innerHTML = 
     '2 x (' + panjangKeliling + ' + ' + lebarKeliling + ')';
