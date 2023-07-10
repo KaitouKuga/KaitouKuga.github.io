@@ -45,6 +45,12 @@ function validateNumericInput(input) {
     if (count > 1) {
       input.value = input.value.replace(/\.+$/, '');
     }
+
+    // Ensure only number
+    if (input.value < 1) {
+    input.value = '';
+    alert('Sisi tidak boleh negative atau angka 0');
+  }
 }
 
 // Persegi
